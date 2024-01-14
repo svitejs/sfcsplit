@@ -1,0 +1,21 @@
+{
+	"version": 3,
+	"file": "index.d.ts",
+	"names": [
+		"sfcsplit",
+		"SplitOptions",
+		"SFCSplitResult",
+		"Tag",
+		"Template",
+		"Position"
+	],
+	"sources": [
+		"../src/index.js",
+		"../src/public.d.ts"
+	],
+	"sourcesContent": [
+		null,
+		null
+	],
+	"mappings": ";iBAKgBA,QAAQA;;;;WCFPC,YAAYA;;;;;;;;;;;;;;;;;;WAkBZC,cAAcA;;;;;;;;;;;;;;;WAedC,GAAGA;;;;;;;;WAQHC,QAAQA;;;;;WAKRC,QAAQA"
+}

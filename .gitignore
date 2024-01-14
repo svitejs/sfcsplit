@@ -1,0 +1,29 @@
+# logs and temp
+*.log
+*.cpuprofile
+temp
+*.tmp
+.eslintcache
+
+# test coverage
+coverage
+*.lcov
+
+# env and local
+*.local
+.env
+
+#node_modules and pnpm
+node_modules
+# only allow lock in root
+**/pnpm-lock.yaml
+!/pnpm-lock.yaml
+.pnpm-store
+
+#ide
+.idea
+.vscode
+
+# macos
+.DS_Store
+._.DS_Store

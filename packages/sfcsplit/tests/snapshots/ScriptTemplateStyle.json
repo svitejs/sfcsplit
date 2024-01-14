@@ -1,0 +1,119 @@
+{
+	"tags": [
+		{
+			"pos": {
+				"start": 30,
+				"end": 89
+			},
+			"name": "svelte:options",
+			"attributes": {
+				"foo": "bar",
+				"bar": "baz",
+				"blub": true
+			},
+			"content": "",
+			"raw": "<svelte:options\n\tfoo=bar\n\tbar=\"baz\"\n\tblub\n></svelte:options>"
+		},
+		{
+			"name": "svelte:options",
+			"pos": {
+				"start": 91,
+				"end": 118
+			},
+			"attributes": {
+				"foo": "bar"
+			},
+			"raw": "<svelte:options foo=\"bar\" />"
+		},
+		{
+			"pos": {
+				"start": 168,
+				"end": 249
+			},
+			"name": "script",
+			"attributes": {
+				"lang": "ts",
+				"context": "module"
+			},
+			"content": "\n\tconst foo = '<script> </'+'script>'\n",
+			"raw": "<script lang=\"ts\" context=\"module\">\n\tconst foo = '<script> </'+'script>'\n</script>"
+		},
+		{
+			"pos": {
+				"start": 276,
+				"end": 322
+			},
+			"name": "script",
+			"attributes": {},
+			"content": "\n\t/* <script> </ script>*/\n",
+			"raw": "<script\n>\n\t/* <script> </ script>*/\n</script  >"
+		},
+		{
+			"pos": {
+				"start": 475,
+				"end": 535
+			},
+			"name": "style",
+			"attributes": {},
+			"content": "\n\t/*style node parsed*/\n\tdiv {color: #ff3e00}\n",
+			"raw": "<style>\n\t/*style node parsed*/\n\tdiv {color: #ff3e00}\n</style>"
+		},
+		{
+			"pos": {
+				"start": 538,
+				"end": 623
+			},
+			"name": "style",
+			"attributes": {
+				"lang": "scss"
+			},
+			"content": "\n\t/*style node parsed*/\n\t$foo: #ff3e00;\n\tdiv {color: $foo}\n",
+			"raw": "<style lang=\"scss\">\n\t/*style node parsed*/\n\t$foo: #ff3e00;\n\tdiv {color: $foo}\n</style>"
+		}
+	],
+	"comments": [
+		{
+			"name": "$comment",
+			"pos": {
+				"start": 0,
+				"end": 28
+			},
+			"content": " comments are ignored ",
+			"raw": "<!-- comments are ignored -->"
+		},
+		{
+			"name": "$comment",
+			"pos": {
+				"start": 120,
+				"end": 166
+			},
+			"content": "\ncomments are ignored\neven if multiline\n",
+			"raw": "<!--\ncomments are ignored\neven if multiline\n-->"
+		},
+		{
+			"name": "$comment",
+			"pos": {
+				"start": 252,
+				"end": 273
+			},
+			"content": " more comments ",
+			"raw": "<!-- more comments -->"
+		},
+		{
+			"name": "$comment",
+			"pos": {
+				"start": 451,
+				"end": 472
+			},
+			"content": " more comments",
+			"raw": "<!-- more comments -->"
+		}
+	],
+	"template": {
+		"pos": {
+			"start": 323,
+			"end": 450
+		},
+		"raw": "\n\n<div>\n\ttemplate\n\t<script>\n\t\t/*nested script not parsed*/\n\t</script>\n\t<style>\n\t\t/* nested style not parsed*/\n\t</style>\n</div>\n\n"
+	}
+}

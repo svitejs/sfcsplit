@@ -1,0 +1,56 @@
+{
+	"tags": [
+		{
+			"pos": {
+				"start": 30,
+				"end": 89
+			},
+			"name": "svelte:options",
+			"attributes": {
+				"foo": "bar",
+				"bar": "baz",
+				"blub": true
+			},
+			"content": "",
+			"raw": "<svelte:options\n\tfoo=bar\n\tbar=\"baz\"\n\tblub\n></svelte:options>"
+		},
+		{
+			"name": "svelte:options",
+			"pos": {
+				"start": 90,
+				"end": 116
+			},
+			"attributes": {
+				"foo": "bar"
+			},
+			"raw": "<svelte:options foo=\"bar\"/>"
+		}
+	],
+	"comments": [
+		{
+			"name": "$comment",
+			"pos": {
+				"start": 0,
+				"end": 28
+			},
+			"content": " comments are ignored ",
+			"raw": "<!-- comments are ignored -->"
+		},
+		{
+			"name": "$comment",
+			"pos": {
+				"start": 559,
+				"end": 580
+			},
+			"content": " more comments",
+			"raw": "<!-- more comments -->"
+		}
+	],
+	"template": {
+		"pos": {
+			"start": 117,
+			"end": 558
+		},
+		"raw": "<div>template<script>/*nested script not parsed*/</script><style>/* nested style not parsed*/</style></div><!-- more comments -->\n<script lang=\"ts\" context=\"module\">const foo = '<script> </'+'script>'</script><!-- more comments -->\n<script>/* <script> </ script>*/</script>\n<!-- more comments -->\n<style>/*style node parsed*/\n\tdiv {color: #ff3e00}\n</style><style lang=\"scss\">\n\t/*style node parsed*/\n\t$foo: #ff3e00;\n\tdiv {color: $foo}\n</style>"
+	}
+}

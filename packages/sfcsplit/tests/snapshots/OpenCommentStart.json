@@ -1,0 +1,21 @@
+{
+	"tags": [],
+	"comments": [
+		{
+			"name": "$comment",
+			"pos": {
+				"start": 0,
+				"end": 154
+			},
+			"content": "<!--\n\nthis comment never ends\n\n<script lang=\"ts\">\n// so this script never gets parsed\n</script>\n\n<div>neither this</div>\n\n<style>\n  /* or this */\n</style>\n",
+			"raw": "<!--\n\nthis comment never ends\n\n<script lang=\"ts\">\n// so this script never gets parsed\n</script>\n\n<div>neither this</div>\n\n<style>\n  /* or this */\n</style>\n"
+		}
+	],
+	"template": {
+		"pos": {
+			"start": 155,
+			"end": 154
+		},
+		"raw": ""
+	}
+}

@@ -1,0 +1,60 @@
+{
+	"name": "sfcsplit",
+	"version": "0.1.0",
+	"description": "A utility to split single file components into their parts",
+	"license": "MIT",
+	"author": "dominikg",
+	"files": [
+		"src",
+		"types",
+		"README.md",
+		"LICENSE",
+		"package.json"
+	],
+	"type": "module",
+	"types": "types/index.d.ts",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./types/index.d.ts",
+				"default": "./src/index.js"
+			}
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/svitejs/sfcsplit.git",
+		"directory": "packages/sfcsplit"
+	},
+	"keywords": [
+		"sfc",
+		"single file component",
+		"split"
+	],
+	"bugs": {
+		"url": "https://github.com/dominikg/sfcsplit/issues"
+	},
+	"homepage": "https://github.com/dominikg/sfcsplit/tree/main/packages/sfcsplit#readme",
+	"devDependencies": {
+		"@skeletonlabs/skeleton": "^2.7.0",
+		"@tsconfig/node18": "^18.2.2",
+		"@vitest/coverage-v8": "^1.1.1",
+		"carbon-components-svelte": "^0.82.7",
+		"esbuild": "^0.19.11",
+		"tiny-glob": "^0.2.9",
+		"typescript": "^5.3.3",
+		"vitest": "^1.1.1"
+	},
+	"engines": {
+		"node": "^18 || >=20"
+	},
+	"scripts": {
+		"check:publint": "publint --strict",
+		"check:types": "tsc --noEmit",
+		"test": "vitest run",
+		"test:coverage": "vitest run --coverage",
+		"test:watch": "vitest",
+		"dts-buddy": "dts-buddy -m \"sfcsplit:src/index.js\"",
+		"bench": "vitest bench"
+	}
+}

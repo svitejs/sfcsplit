@@ -1,0 +1,44 @@
+{
+	"tags": [
+		{
+			"pos": {
+				"start": 0,
+				"end": 56
+			},
+			"name": "script",
+			"attributes": {
+				"lang": "ts"
+			},
+			"content": "\n//  this script  gets parsed\n",
+			"raw": "<script lang=\"ts\">\n//  this script  gets parsed\n</script>"
+		},
+		{
+			"pos": {
+				"start": 84,
+				"end": 116
+			},
+			"name": "style",
+			"attributes": {},
+			"content": "\n  /* and this */\n",
+			"raw": "<style>\n  /* and this */\n</style>"
+		}
+	],
+	"comments": [
+		{
+			"name": "$comment",
+			"pos": {
+				"start": 119,
+				"end": 149
+			},
+			"content": "<!--\n\nthis comment never ends\n\n",
+			"raw": "<!--\n\nthis comment never ends\n\n"
+		}
+	],
+	"template": {
+		"pos": {
+			"start": 57,
+			"end": 83
+		},
+		"raw": "\n\n<div>so does this</div>\n\n"
+	}
+}
