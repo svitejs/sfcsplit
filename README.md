@@ -17,7 +17,6 @@ Doing a full parse is costly and approaches using regex are slow and error prone
 - [x] unbundled esm js, no sourcemaps needed
 - [x] [types](./packages/sfcsplit/types/index.d.ts) generated with [dts-buddy](https://github.com/Rich-Harris/dts-buddy)
 
-
 # Links
 
 [package readme](./packages/sfcsplit/README.md)
