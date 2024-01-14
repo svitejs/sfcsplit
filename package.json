@@ -17,7 +17,7 @@
 		"generate:docs": "node scripts/generate-api-docs.js",
 		"release": "pnpm changeset publish",
 		"prepare": "husky install",
-		"bench": "pnpm --dir packages/sfcsplit run vitest bench"
+		"bench": "pnpm --dir packages/sfcsplit run bench"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.27.1",
