@@ -9,13 +9,20 @@ A utility to split Single File Components into their top level parts
 
 Doing a full parse is costly and approaches using regex are slow and error prone.
 
-## API
+# Features
 
-see [API-DOCS](../../docs/api.md)
+- [x] completely without regex
+- [x] zero dependencies
+- [x] small
+- [x] unbundled esm js, no sourcemaps needed
+- [x] [types](./packages/sfcsplit/types/index.d.ts) generated with [dts-buddy](https://github.com/Rich-Harris/dts-buddy)
+
 
 # Links
 
-- [changelog](CHANGELOG.md)
+[package readme](./packages/sfcsplit/README.md)
+[api](./docs/api.md)
+[changelog](./packages/sfcsplit/CHANGELOG.md)
 
 # Develop
 
@@ -37,4 +44,4 @@ pnpm test
 
 # License
 
-[MIT](./LICENSE)
+[MIT](./packages/sfcsplit/LICENSE)
