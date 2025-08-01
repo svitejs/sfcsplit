@@ -21,15 +21,15 @@ export interface SplitOptions {
  */
 export interface SFCSplitResult {
 	/**
-	 * found tags matching options.tags at start/end of source
+	 * List of tags matching options.tags at start/end of source
 	 */
 	tags: Tag[];
 	/**
-	 * comments at start/end of source. they can also appear between found tags
+	 * Comments at start/end of source. they can also appear between found tags
 	 */
 	comments: Tag[];
 	/**
-	 * the content between last found tag from start and first found tag from end
+	 * The content between last found tag from start and first found tag from end
 	 */
 	template: Template;
 }
