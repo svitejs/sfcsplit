@@ -1,6 +1,6 @@
 {
 	"name": "sfcsplit",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A utility to split single file components into their parts",
 	"license": "MIT",
 	"author": "dominikg",
