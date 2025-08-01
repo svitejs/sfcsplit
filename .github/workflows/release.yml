@@ -43,6 +43,8 @@ jobs:
           node-version: ${{ matrix.node }}
           cache: 'pnpm'
           cache-dependency-path: '**/pnpm-lock.yaml'
+      - name: update npm
+        run: npm update -g npm # temporary until setup-node action comes with npm version that contains oidc setup by default
       - name: install
         run: pnpm install --frozen-lockfile --prefer-offline --ignore-scripts
       - name: publint
